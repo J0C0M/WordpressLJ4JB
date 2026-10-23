@@ -7,3 +7,8 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+<header class="site-header">
+    <div class="container site-header__inner">
+        <a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+    </div>
+</header>
