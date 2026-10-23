@@ -4,3 +4,6 @@ app/sql/
 
 # Demo-uploads (afbeeldingen uit de mediabibliotheek)
 app/public/wp-content/uploads/
+
+# ide instellingen (PhpStorm)
+.idea/
