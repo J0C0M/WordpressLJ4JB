@@ -22,3 +22,17 @@ function gamereview_enqueue_assets() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'gamereview_enqueue_assets' );
+
+// Widget-gebied in de footer
+function gamereview_widgets_init() {
+    register_sidebar( array(
+        'name'          => 'Footer widgets',
+        'id'            => 'footer-widgets',
+        'description'   => 'Widgets die onderaan elke pagina getoond worden.',
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'gamereview_widgets_init' );
