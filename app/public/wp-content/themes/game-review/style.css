@@ -7,3 +7,9 @@ Requires at least: 6.0
 Requires PHP: 7.4
 Text Domain: game-review
 */
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+}
