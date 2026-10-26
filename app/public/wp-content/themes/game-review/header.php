@@ -10,5 +10,15 @@
 <header class="site-header">
     <div class="container site-header__inner">
         <a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+        <nav class="site-nav" aria-label="Hoofdmenu">
+            <?php
+            wp_nav_menu( array(
+                'theme_location' => 'primary',
+                'container'      => false,
+                'menu_class'     => 'menu',
+                'fallback_cb'    => false,
+            ) );
+            ?>
+        </nav>
     </div>
 </header>
