@@ -7,3 +7,6 @@ app/public/wp-content/uploads/
 
 # ide instellingen (PhpStorm)
 .idea/
+
+# Taalbestanden die WordPress zelf downloadt
+app/public/wp-content/languages/
