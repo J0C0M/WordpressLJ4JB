@@ -1,14 +1,18 @@
 <?php
 
-// Zet thema-functies aan
+// Zet thema-functies aan en koppel menu
 function gamereview_setup() {
     add_theme_support( 'title-tag' );
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption' ) );
+
+    register_nav_menus( array(
+        'primary' => 'Hoofdmenu',
+    ) );
 }
 add_action( 'after_setup_theme', 'gamereview_setup' );
 
-// Laad style.css 
+// Laad style.css
 function gamereview_enqueue_assets() {
     wp_enqueue_style(
         'game-review-style',
