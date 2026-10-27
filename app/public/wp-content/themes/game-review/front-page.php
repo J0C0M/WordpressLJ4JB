@@ -39,6 +39,14 @@
             <?php wp_reset_postdata(); ?>
         </div>
     </section>
+    <section class="genres">
+        <div class="container">
+            <h2 class="section-title">Kies een genre</h2>
+            <ul class="genre-list">
+                <?php wp_list_categories( array( 'title_li' => '' ) ); ?>
+            </ul>
+        </div>
+    </section>
 
 </main>
 
