@@ -23,6 +23,12 @@
                     <?php the_content(); ?>
                 </div>
             </article>
+            <?php
+            the_post_navigation( array(
+                'prev_text' => '&larr; %title',
+                'next_text' => '%title &rarr;',
+            ) );
+            ?>
         <?php endwhile; ?>
 
     </div>
