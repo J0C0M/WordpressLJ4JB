@@ -10,6 +10,11 @@
                     <span class="entry__date"><?php echo esc_html( get_the_date() ); ?></span>
                     <span class="entry__author">door <?php the_author_posts_link(); ?></span>
                 </p>
+                <?php if ( has_post_thumbnail() ) : ?>
+                    <div class="entry__image">
+                        <?php the_post_thumbnail( 'large' ); ?>
+                    </div>
+                <?php endif; ?>
                 <p class="entry__terms">
                     <span class="entry__genre">Genre: <?php the_category( ', ' ); ?></span>
                     <?php the_tags( '<span class="entry__platforms">Platform: ', ', ', '</span>' ); ?>
