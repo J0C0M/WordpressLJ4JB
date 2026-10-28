@@ -8,8 +8,51 @@ Requires PHP: 7.4
 Text Domain: game-review
 */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: system-ui, sans-serif;
     line-height: 1.6;
+    color: #222;
+    background: #f2f2f2;
+}
+
+a {
+    color: #b8400d;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-main {
+    padding: 30px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #b8400d;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #8f3009;
+}
+
+.screen-reader-text {
+    position: absolute;
+    left: -9999px;
 }
