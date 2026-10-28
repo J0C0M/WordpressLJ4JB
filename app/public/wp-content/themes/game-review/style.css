@@ -56,3 +56,45 @@ img {
     position: absolute;
     left: -9999px;
 }
+
+/* header */
+.site-header {
+    background: #1d1d1d;
+    border-bottom: 4px solid #b8400d;
+}
+
+.site-header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.site-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu .current-menu-item a {
+    border-bottom: 2px solid #b8400d;
+}
