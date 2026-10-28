@@ -250,3 +250,84 @@ img {
     justify-content: space-between;
     gap: 20px;
 }
+
+/* archieven en paginering */
+.page-header {
+    margin-bottom: 25px;
+}
+
+.page-label {
+    margin: 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.page-title {
+    margin: 0 0 15px;
+    font-size: 32px;
+}
+
+.page-description {
+    margin: 0 0 15px;
+}
+
+.author-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.author-header img {
+    border-radius: 50%;
+}
+
+.pagination {
+    margin-top: 30px;
+}
+
+.pagination .nav-links {
+    display: flex;
+    gap: 8px;
+}
+
+.page-numbers {
+    padding: 6px 12px;
+    background: #fff;
+    color: #222;
+    text-decoration: none;
+}
+
+.page-numbers.current {
+    background: #b8400d;
+    border-color: #b8400d;
+    color: #fff;
+}
+
+/* footer */
+.site-footer {
+    padding: 30px 0;
+    background: #1d1d1d;
+    color: #ccc;
+}
+
+.site-footer a {
+    color: #fff;
+}
+
+.widget-title {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.widget ul {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.site-info {
+    margin: 0;
+    font-size: 14px;
+}
