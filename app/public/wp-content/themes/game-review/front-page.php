@@ -16,18 +16,10 @@
             <a class="button" href="<?php echo esc_url( get_post_type_archive_link( 'post' ) ); ?>">Alle reviews</a>
         </div>
     </section>
-    <section class="latest">
+        <section class="latest">
         <div class="container">
             <h2 class="section-title">Laatste reviews</h2>
-
-                <section class="latest">
-                    <div class="container">
-                        <h2 class="section-title">Laatste reviews</h2>
-                        <?php get_template_part( 'template-parts/latest-reviews' ); ?>
-                    </div>
-                </section>
-
-            <?php wp_reset_postdata(); ?>
+            <?php get_template_part( 'template-parts/latest-reviews' ); ?>
         </div>
     </section>
     <section class="genres">
