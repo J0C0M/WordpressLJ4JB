@@ -98,3 +98,155 @@ img {
 .menu .current-menu-item a {
     border-bottom: 2px solid #b8400d;
 }
+
+/* voorpagina */
+.hero {
+    padding: 50px 0;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.hero__title {
+    margin: 0 0 10px;
+    font-size: 40px;
+}
+
+.hero__tagline {
+    margin: 0 0 20px;
+    font-size: 20px;
+}
+
+.hero__text {
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+.home .site-main {
+    padding: 0 0 40px;
+}
+
+.latest,
+.genres {
+    padding-top: 40px;
+}
+
+.section-title {
+    margin: 0 0 20px;
+    font-size: 26px;
+}
+
+.genre-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.genre-list a {
+    display: block;
+    padding: 8px 16px;
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #222;
+    text-decoration: none;
+}
+
+.genre-list a:hover {
+    border-color: #b8400d;
+    color: #b8400d;
+}
+
+/* review-kaartjes */
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.review-card {
+    background: #fff;
+}
+
+.review-card__image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.review-card__body {
+    padding: 15px;
+}
+
+.review-card__genre {
+    margin: 0 0 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.review-card__title {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.review-card__title a {
+    color: #222;
+    text-decoration: none;
+}
+
+.review-card__title a:hover {
+    color: #b8400d;
+}
+
+.review-card__excerpt p {
+    margin: 0 0 10px;
+}
+
+.review-card__link {
+    font-weight: bold;
+}
+
+/* losse pagina en review */
+.entry {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.entry__title {
+    margin: 0 0 10px;
+    font-size: 34px;
+}
+
+.entry__meta,
+.entry__terms {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.entry__meta span,
+.entry__terms span {
+    margin-right: 15px;
+}
+
+.entry__image {
+    margin: 20px 0;
+}
+
+.entry__content h2 {
+    margin: 30px 0 10px;
+}
+
+.post-navigation {
+    max-width: 700px;
+    margin: 20px auto 0;
+}
+
+.post-navigation .nav-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
