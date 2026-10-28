@@ -1,0 +1,12 @@
+# Local: logbestanden en database-export
+logs/
+app/sql/
+
+# Demo-uploads (afbeeldingen uit de mediabibliotheek)
+app/public/wp-content/uploads/
+
+# ide instellingen (PhpStorm)
+.idea/
+
+# Taalbestanden die WordPress zelf downloadt
+app/public/wp-content/languages/
