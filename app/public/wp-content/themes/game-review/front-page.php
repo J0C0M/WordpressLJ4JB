@@ -20,21 +20,12 @@
         <div class="container">
             <h2 class="section-title">Laatste reviews</h2>
 
-            <?php
-            $latest = new WP_Query( array(
-                'post_type'           => 'post',
-                'posts_per_page'      => 3,
-                'ignore_sticky_posts' => true,
-            ) );
-            ?>
-
-            <?php if ( $latest->have_posts() ) : ?>
-                <div class="review-grid">
-                    <?php while ( $latest->have_posts() ) : $latest->the_post(); ?>
-                        <?php get_template_part( 'template-parts/review-card' ); ?>
-                    <?php endwhile; ?>
-                </div>
-            <?php endif; ?>
+                <section class="latest">
+                    <div class="container">
+                        <h2 class="section-title">Laatste reviews</h2>
+                        <?php get_template_part( 'template-parts/latest-reviews' ); ?>
+                    </div>
+                </section>
 
             <?php wp_reset_postdata(); ?>
         </div>
